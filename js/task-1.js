@@ -1,4 +1,5 @@
 function slugify(title) {
+    // приводимо рядок до нижнього регістру, розділяємо слова пробілами та замінюємо пробіли на дефіси
     return title.toLowerCase().split(" ").join('-');
 }
 

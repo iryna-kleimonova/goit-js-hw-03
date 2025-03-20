@@ -1,7 +1,8 @@
 function makeArray (firstArray, secondArray, maxLength) {
+    // створюємо новий масив, який складається з елементів першого масиву та другого
     let newArray = firstArray.concat(secondArray);
+    // повертаємо новий масив, який складається з елементів першого масиву та другого, але не більше ніж maxLength
         return newArray.slice(0, maxLength);
-
 }
 
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
